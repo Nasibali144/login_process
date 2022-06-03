@@ -40,7 +40,6 @@ class _LoginPageState extends State<LoginPage> {
                       color: AppConstants.colorUnSelectedButton),
                   child: Row(
                     children: [
-
                       // #log_in
                       Expanded(
                         child: ElevatedButton(
@@ -95,42 +94,56 @@ class _LoginPageState extends State<LoginPage> {
                 // #email
                 const Text(
                   "Email address",
-                  style:  TextStyle(
+                  style: TextStyle(
                     fontSize: 13,
                     fontFamily: "Inter",
                     fontWeight: FontWeight.w500,
                     color: AppConstants.colorText,
                   ),
                 ),
-                const SizedBox(height: 5,),
+                const SizedBox(
+                  height: 5,
+                ),
                 SizedBox(
                   height: 50,
                   width: double.infinity,
                   child: TextFormField(
                     textAlignVertical: TextAlignVertical.center,
                     decoration: InputDecoration(
-                      contentPadding: const EdgeInsets.symmetric(horizontal: 15),
+                      contentPadding:
+                          const EdgeInsets.symmetric(horizontal: 15),
                       alignLabelWithHint: true,
                       isCollapsed: true,
                       filled: true,
                       fillColor: AppConstants.colorField,
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: AppConstants.colorTextFieldBorder, width: 1),
+                        borderSide: const BorderSide(
+                            color: AppConstants.colorTextFieldBorder, width: 1),
                       ),
                       hintText: "you@example.com",
-                      hintStyle: const TextStyle(color: AppConstants.colorText,),
+                      hintStyle: const TextStyle(
+                        color: AppConstants.colorText,
+                      ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: AppConstants.colorTextFieldBorder, width: 1),
+                        borderSide: const BorderSide(
+                            color: AppConstants.colorTextFieldBorder, width: 1),
                       ),
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: AppConstants.colorError, width: 1),
+                        borderSide: const BorderSide(
+                            color: AppConstants.colorError, width: 1),
                       ),
-                      errorStyle: const TextStyle(color: AppConstants.colorError,),
+                      errorStyle: const TextStyle(
+                        color: AppConstants.colorError,
+                      ),
                       // errorText: "Invalid email address",
-                      suffixIcon: const Icon(Icons.close, color: AppConstants.colorTypingText, size: 16,),
+                      suffixIcon: const Icon(
+                        Icons.close,
+                        color: AppConstants.colorTypingText,
+                        size: 16,
+                      ),
                     ),
                     style: const TextStyle(
                       color: AppConstants.colorTypingText,
@@ -143,47 +156,63 @@ class _LoginPageState extends State<LoginPage> {
                     cursorHeight: 18,
                   ),
                 ),
-                const SizedBox(height: 20,),
+                const SizedBox(
+                  height: 20,
+                ),
 
                 // #password
                 const Text(
                   "Password",
-                  style:  TextStyle(
+                  style: TextStyle(
                     fontSize: 13,
                     fontFamily: "Inter",
                     fontWeight: FontWeight.w500,
                     color: AppConstants.colorText,
                   ),
                 ),
-                const SizedBox(height: 5,),
+                const SizedBox(
+                  height: 5,
+                ),
                 SizedBox(
                   height: 50,
                   width: double.infinity,
                   child: TextFormField(
                     textAlignVertical: TextAlignVertical.center,
                     decoration: InputDecoration(
-                      contentPadding: const EdgeInsets.symmetric(horizontal: 15),
+                      contentPadding:
+                          const EdgeInsets.symmetric(horizontal: 15),
                       alignLabelWithHint: true,
                       isCollapsed: true,
                       filled: true,
                       fillColor: AppConstants.colorField,
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: AppConstants.colorTextFieldBorder, width: 1),
+                        borderSide: const BorderSide(
+                            color: AppConstants.colorTextFieldBorder, width: 1),
                       ),
                       hintText: "Your password",
-                      hintStyle: const TextStyle(color: AppConstants.colorText,),
+                      hintStyle: const TextStyle(
+                        color: AppConstants.colorText,
+                      ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: AppConstants.colorTextFieldBorder, width: 1),
+                        borderSide: const BorderSide(
+                            color: AppConstants.colorTextFieldBorder, width: 1),
                       ),
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: AppConstants.colorError, width: 1),
+                        borderSide: const BorderSide(
+                            color: AppConstants.colorError, width: 1),
                       ),
-                      errorStyle: const TextStyle(color: AppConstants.colorError,),
+                      errorStyle: const TextStyle(
+                        color: AppConstants.colorError,
+                      ),
                       // errorText: "Invalid email address",
-                      suffixIcon: const Icon(Icons.close, color: AppConstants.colorTypingText, size: 16,),
+                      suffixIcon: const Icon(
+                        Icons.close,
+                        color: AppConstants.colorTypingText,
+                        size: 16,
+                      ),
                     ),
                     style: const TextStyle(
                       color: AppConstants.colorTypingText,
@@ -198,7 +227,9 @@ class _LoginPageState extends State<LoginPage> {
                     obscuringCharacter: "*",
                   ),
                 ),
-                const SizedBox(height: 40,),
+                const SizedBox(
+                  height: 40,
+                ),
 
                 // #sign_in
                 ElevatedButton(
@@ -220,7 +251,9 @@ class _LoginPageState extends State<LoginPage> {
                     "Sign In",
                   ),
                 ),
-                const SizedBox(height: 10,),
+                const SizedBox(
+                  height: 10,
+                ),
 
                 // #forgot_password
                 SizedBox(
@@ -229,12 +262,14 @@ class _LoginPageState extends State<LoginPage> {
                   child: Center(
                     child: TextButton(
                       onPressed: () {},
-                      child: const Text("Forgot password?", style: TextStyle(
-                        color: AppConstants.colorTextButton,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                        fontFamily: "Inter",
-                      ),
+                      child: const Text(
+                        "Forgot password?",
+                        style: TextStyle(
+                          color: AppConstants.colorTextButton,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          fontFamily: "Inter",
+                        ),
                       ),
                     ),
                   ),
@@ -245,18 +280,19 @@ class _LoginPageState extends State<LoginPage> {
             // #footer
             Column(
               mainAxisAlignment: MainAxisAlignment.end,
-              children:  [
+              children: [
                 // #sign_in_with
-                Text(
+                const Text(
                   "Sign in with",
                   style: TextStyle(
-                  color: AppConstants.colorText,
-                  fontFamily: "Inter",
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500
+                      color: AppConstants.colorText,
+                      fontFamily: "Inter",
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500),
                 ),
+                const SizedBox(
+                  height: 15,
                 ),
-                SizedBox(height: 15,),
 
                 // #icons
                 Row(
@@ -273,7 +309,10 @@ class _LoginPageState extends State<LoginPage> {
                           borderRadius: BorderRadius.circular(15),
                           color: AppConstants.colorIconButton,
                         ),
-                        child: SvgPicture.asset("assets/icons/ic_apple.svg", fit: BoxFit.cover,),
+                        child: SvgPicture.asset(
+                          "assets/icons/ic_apple.svg",
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                     GestureDetector(
@@ -288,7 +327,10 @@ class _LoginPageState extends State<LoginPage> {
                           borderRadius: BorderRadius.circular(15),
                           color: AppConstants.colorIconButton,
                         ),
-                        child: SvgPicture.asset("assets/icons/ic_meta.svg", fit: BoxFit.cover,),
+                        child: SvgPicture.asset(
+                          "assets/icons/ic_meta.svg",
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                     GestureDetector(
@@ -302,7 +344,10 @@ class _LoginPageState extends State<LoginPage> {
                           borderRadius: BorderRadius.circular(15),
                           color: AppConstants.colorIconButton,
                         ),
-                        child: SvgPicture.asset("assets/icons/ic_twitter.svg", fit: BoxFit.cover,),
+                        child: SvgPicture.asset(
+                          "assets/icons/ic_twitter.svg",
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ],
