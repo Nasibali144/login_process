@@ -16,7 +16,13 @@ class LoginProcessApp extends StatelessWidget {
         scaffoldBackgroundColor: AppConstants.colorBackground
       ),
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: const LoginPage(),
+      builder: (context, child) {
+        return MediaQuery(
+          data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+          child: child!,
+        );
+      },
       routes: {
         LoginPage.id: (context) => LoginPage(),
       },
