@@ -107,14 +107,32 @@ class _LoginPageState extends State<LoginPage> {
                   height: 50,
                   width: double.infinity,
                   child: TextFormField(
-
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: AppConstants.colorField,
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
+                        borderSide: const BorderSide(color: AppConstants.colorTextFieldBorder, width: 1),
                       ),
                       hintText: "you@example.com",
+                      hintStyle: const TextStyle(color: AppConstants.colorText,),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: const BorderSide(color: AppConstants.colorTextFieldBorder, width: 1),
+                      ),
+                      errorBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: const BorderSide(color: AppConstants.colorError, width: 1),
+                      ),
+                      errorStyle: const TextStyle(color: AppConstants.colorError,),
+                      // errorText: "Invalid email address",
+                      suffixIcon: const Icon(Icons.close, color: AppConstants.colorTypingText, size: 16,)
+                    ),
+                    style: const TextStyle(
+                      color: AppConstants.colorTypingText,
+                      fontSize: 13,
+                      fontFamily: "Inter",
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
                 ),

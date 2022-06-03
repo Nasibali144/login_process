@@ -11,4 +11,7 @@ class AppConstants {
   static const colorMainButton = Color(0xFF7339E5);
   static const colorTextButton = Color(0xFF804CEF);
   static const colorTypingText = Color(0xFF878787);
+  static const colorError = Color(0xFFB04F4F);
+  static const colorErrorSurface = Color(0xFF6A3535);
+  static const colorTextFieldBorder = Color(0xFF3E3E41);
 }
